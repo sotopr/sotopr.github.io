@@ -1,0 +1,444 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #5d5d5d;
+}
+h2 {
+  color: #eb9b1f;
+  margin-top: 1px;
+}
+
+
+/* Navigation CSS Styles */
+
+.logoCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10px;
+}
+
+.logoCenter img {
+  max-width: 160px;
+  width: 100%;
+}
+
+.topnav {
+    overflow: hidden;
+    padding: 22px 0;
+    box-shadow: 0 1px 5px #888888;
+}
+
+.topnav .nav-right {
+  float: right;
+  margin-right: 6%;
+}
+
+
+.topnav a {
+    margin-left: 0;
+    color: #5d5d5d;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.topnav a:hover {
+    color: #eb9b1f;
+}
+
+.topnav .active {
+    color: #eb9b1f;
+    font-weight: 800;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* End Navigation CSS Styles */
+
+
+
+/* Portfolio Grid CSS Styles */
+
+@media screen and (min-width: 580px) {
+
+  /* Float */
+  .hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  /* Sink */
+  .hvr-sink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  /* Forward */
+  .hvr-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  /* Backward */
+  .hvr-backward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+  background: #fff;
+  box-shadow: 0 1px 5px #888888;
+}
+
+.col img {
+  width: 100%;
+}
+
+.col .toptext {
+  font-size: 19px;
+  font-weight: 700;
+  padding-left: 10px;
+  margin: 20px 10px 2px 10px;
+}
+
+.col .title {
+  font-size: 17px;
+  font-weight: 400;
+  padding-left: 10px;
+  margin: 2px 0 10px 10px;
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 580px) {
+
+  .container {
+    width: 85%;
+  }
+  .col {  margin: 3% 0 3% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+
+}
+
+/* Portfolio End Grid CSS Styles */
+
+
+/* About Me CSS Styles */
+
+.aboutme {
+  margin-top: 70px;
+}
+
+.aboutme .portrait {
+	width: 35%;
+  float: left;
+}
+
+.aboutme .portrait img {
+  width: 100%;
+}
+
+.aboutme .bio {
+	width: 55%;
+  float: right;
+}
+
+.aboutme .bio p{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.aboutme .bio .resume-link {
+  font-size: 18px;
+  color: #eb9b1f;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 2px solid #eb9b1f;
+  text-align: center;
+  max-width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+}
+.aboutme .bio .resume-link:hover {
+  color: #ffffff;
+  background-color: #eb9b1f;
+}
+
+.contactme {
+  clear: both;
+  text-align: center;
+}
+.contactme a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #eb9b1f;
+}
+/* End About Me CSS Styles */
+
+
+
+/* Projects CSS Styles */
+
+.portfolio {
+  padding: 10px 10px;
+  background: #f1f1f1;
+  box-shadow: 0 1px 5px #888888;
+}
+
+.mockups {
+    width: 49%;
+    /* max-width: 440px; */
+    /* margin: 0 auto; */
+    display: inline-block;
+    position: absolute;
+}
+
+.mockups img {
+  display: block;
+  margin: 0 auto;
+
+}
+
+.port-info {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline-block;
+}
+.port-info p  {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.port-info img {
+  width: 20px;
+}
+
+.port-info a {
+  color: #eb9b1f;
+}
+
+.fullview {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5px 0;
+/*  margin: 20px 0 auto;
+  width: 100%; */
+}
+
+.bottom-cont {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+.fullview img {
+  width: 100%;
+}
+
+
+/* Ends Portfolio CSS Styles */
+
+
+
+
+/* Bottom Links CSS Styles */
+
+.lin {
+  width: 40px;
+  padding: 5px;
+}
+
+/* End Bottom Links CSS Styles */
+
+
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav .nav-right {
+    float: none;
+    margin-right: auto;
+  }
+  .fixed-bot {
+    position: relative;
+    float: right;
+    height: 50px;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding-top: 15px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+
+  /* about me queries */
+
+  .aboutme {
+    margin-top: 0;
+  }
+
+  .aboutme .portrait {
+  	width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    float: none;
+  }
+  .aboutme .portrait img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  .aboutme .bio {
+  	width: 95%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .aboutme .bio a {
+    margin-top: 30px;
+  }
+
+
+/* portfolio queries */
+
+  .mockups {
+      width: 100%;
+      position: relative;
+  }
+
+
+  .port-info {
+      width: 95%;
+      float: none;
+      margin-top: 20px;
+  }
+  .port-info p  {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+
+}
+
+
+@media screen and (min-width: 920px) {
+
+  .container {
+    width: 900px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .aboutme .bio .resume-link {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

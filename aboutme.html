@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
+    <title>Portfolio | Carlos Soto</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#2bc6e8">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
+
+  </head>
+  <body>
+
+
+  <div class="logoCenter"><a href="index.html"><img src="images/logocs.png" /></a></div>
+  <div class="topnav" id="mainNav">
+      <div class="nav-right">
+        <a></a>
+        <a href="index.html">Portfolio</a>
+        <a href="aboutme.html" class="active">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+  </div>
+
+
+  <div class="container aboutme">
+    <div class="portrait">
+      <img src="images/portrait.jpg" alt="" />
+    </div>
+    <div class="bio">
+      <h2>About Me</h2>
+      <p>Hey! Carlos here, graphic designer from the beautiful island of Puerto Rico. After hurricane María, I decided to begin a new journey and move to Chicago. My interest for design in high school made me realize I wanted to pursue a career in graphic design.
+        <br><br>While making my bachelor's degree in digital graphic design I discovered a new love for user interface and user experience design. These past years I have been focusing my career on UI/UX design and Front-end development.
+        <br><br>People like to use intuitive products, not just by design but in their everyday life. I want to create new and familiar experiences for people to enjoy.</p>
+
+      <div class="contactme">
+        <p></p>Contact info:</p>
+        <a href="files\CarlosSoto-Resume.pdf" target="_blank" class="resume-link">Resume</a>
+        <a class="resume-link" href="mailto:csoto@carlossoto.net">csoto@carlossoto.net</a>
+        <a class="resume-link" href="https://www.linkedin.com/in/carlos-soto-negron/" target="_blank" >LinkedIn</a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("mainNav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+  </body>
+</html>
