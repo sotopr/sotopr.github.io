@@ -10,7 +10,7 @@ h2 {
 }
 
 
-/* Navigation CSS Styles */
+/* Navigation and Footer CSS Styles */
 
 .logoCenter {
     position: absolute;
@@ -58,6 +58,18 @@ h2 {
     display: none;
 }
 
+
+footer {
+  background-color: #efefefef;
+  padding: 10px;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1;
+}
 
 /* End Navigation CSS Styles */
 
